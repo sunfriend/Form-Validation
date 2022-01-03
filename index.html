@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js" defer></script>
+    <title>Form Validation</title>
+</head>
+<body>
+    <form class="registration-form">
+        <h1>Simple Form Validation</h1>
+        <div class="email container">
+            <label>Email</label>
+            <input id="email" type="email" pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$">
+            <small>Email isn't valid</small>
+        </div>
+        <div class="password container">
+            <label>Password</label>
+            <input id="password" type="password">
+            <label>Password Confirmation</label>
+            <input id="password-verification" type="password">
+            <small></small>
+        </div>
+        <div class="country">
+            <select id="country container" name="" id="">
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="EU">EU</option>
+                <option value="Australia">Australia</option>
+            </select>
+            <input id="zip-code" type="number" placeholder="zip-code">
+            <small></small>
+        </div>
+        <div class="container">
+            <input type="submit" value="Register" id="submit">
+        </div>
+    </form>
+</body>
+</html>

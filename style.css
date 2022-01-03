@@ -1,0 +1,77 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.registration-form {
+    max-width: 25rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10% auto;
+    background-color: rgb(212, 236, 184);
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.password {
+    display: grid;
+    flex-direction: column;
+}
+
+.password input {
+    margin-bottom: .5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: .8rem;
+}
+
+.country {
+    margin: 0.8rem 0 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#submit {
+    margin-top: 1rem;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(48, 101, 161);
+    padding: .3rem 0;
+    color: wheat;
+    font-size: 1.5rem;
+}
+
+#submit:hover {
+    background-color: rgb(87, 123, 241);
+    cursor: pointer;
+    color: black;
+}
+
+.success {
+    border: 2px solid chartreuse;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.show-error {
+    display: inline;
+}
+
+small {
+    display: none;
+    color: red;
+    height: 0;
+}
